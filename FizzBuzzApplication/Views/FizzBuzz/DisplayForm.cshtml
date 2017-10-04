@@ -1,0 +1,32 @@
+﻿@model FizzBuzzApplication.Models.Fizz_Buzz_Model
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayForm</title>
+</head>
+<body>
+    <div> 
+        <table class="table">
+            <tr>
+                <th>Result View</th>
+            </tr>
+            @foreach (var item in Model.Result)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item)
+                    </td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</body>
+</html>

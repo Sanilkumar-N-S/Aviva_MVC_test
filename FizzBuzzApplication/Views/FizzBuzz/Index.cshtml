@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FizzBuzzPage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function myFunction() {
+
+            if (document.getElementById('Number').value > 1000)
+            {
+                alert('Please enter within 1000');
+                e.preventDefault();
+            }
+            if (document.getElementById('Number').value < 1)
+            {
+                alert('Please Enter greater than 1');
+                e.preventDefault();
+            }
+               
+    window.open("http://localhost:9915/FizzBuzz/DisplayForm?input=" + document.getElementById('Number').value);
+}
+    </script>
+</head>
+
+<body>
+    <form action="" id="myform" >
+    <div>
+            <div>
+                <div>
+                    <label for="">Please Enter Value : </label>
+                </div>
+                <div>
+                    <input type="text" id="Number" name="Number" class="equipCatValidation">
+                </div>
+                <p>
+                    <button onclick="myFunction()">Submit</button>
+                </p>
+            </div>
+
+    </div>
+    </form>
+</body>
+</html>
